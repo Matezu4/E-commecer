@@ -49,15 +49,13 @@ body{
     align-items: center;
     list-style: none;
     gap: 25px;
+    position: relative;
 }
 
 .menu-lista li {
+    position: relative;
     display: flex;
     align-items: center;
-}
-
-.menu-lista img {
-    cursor: pointer;
 }
 
 .menu-lista a {
@@ -70,7 +68,46 @@ body{
 }
 
 .menu-lista a:hover {
-    color: #7e6969;
+    color: #9a5fd1;
+}
+
+.menu-lista img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    width: 100%;
+    padding: 8px 20px;
+}
+
+.drop a {
+    width: 100%;
+    display: block;
+    color: #333;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #9a5fd1;
 }
 
 .botao {
