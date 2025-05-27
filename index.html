@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Botânica</title>
-    <link rel="icon" href="img/favicon.ico">
     <link rel="stylesheet" href="styleM.css">
     <link rel="stylesheet" href="produtos_style.css">
 </head>
@@ -14,9 +13,19 @@
             <nav class="menu">
                 <ul class="menu-lista">
                     <li><img src="img/favicon.ico" alt="Ícone" onclick="filtrarProdutos('todos')"></li>
-                    <li><a href="#" onclick="filtrarProdutos('plantas')">Plantas</a></li>
-                    <li><a href="#" onclick="filtrarProdutos('ferramentas')">Ferramentas</a></li>
-                    <li><a href="#" onclick="filtrarProdutos('sementes')">Sementes</a></li>
+
+                    <li class="dropdown">
+                        <span class="drop">Categorias ▾</span>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="filtrarProdutos('todos')">Todos</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('plantas')">Plantas</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('ferramentas')">Ferramentas</a></li>
+                            <li><a href="#" onclick="filtrarProdutos('sementes')">Sementes</a></li>
+                        </ul>
+                    </li>
+                    <li>Contato</li>
+                    <li>Sobre nós</li>
+
                 </ul>
             </nav>
             <div class="user-avatar" id="userAvatar">A</div>
